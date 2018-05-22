@@ -48,7 +48,7 @@ function removeFromCart(item) {
  for (var i = 0; i < cart.length; i++){
    if (cart[i].itemName === itemGone) { 
      var indexOfDelItem = cart.indexOf(`${itemGone}`);
-     cart.splice(indexOfDelItem, 1);
+     cart.splice(i, 1);
    }
  }
 }
