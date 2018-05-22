@@ -36,7 +36,10 @@ return cartWording
 }}
 
 function total() {
-  
+  var totalPrice = ''
+  for (var i = 0; i < cart.length; i++){
+    totalPrice += `${cart[i].itemPrice}`
+  }
 }
   
 
