@@ -33,14 +33,16 @@ function viewCart() {
       else if (i === cart.length - 1) { 
        cartWording += ` and ${cart[i].itemName} at $${cart[i].itemPrice}.`    } }}
 return cartWording
-}}
+}}}
 
 function total() {
-  var priceTotal = 0
+  var priceTotal = 0;
   for (var i = 0, i < cart.length, i++) {
-    priceTotal += `${cart[i].itemPrice}`
-  }
+    priceTotal += `${cart[i].itemPrice}`}
+  return priceTotal
 }
+  
+
 
 function removeFromCart(item) {
   // write your code here
