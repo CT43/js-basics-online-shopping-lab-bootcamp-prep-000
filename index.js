@@ -10,15 +10,36 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+  var itemName = `${item}`;
+  var itemPrice = Math.floor(Math.random()*100);
+  var newItem = {itemName,itemPrice};
+  cart.push(newItem);
+  return `${itemName} has been added to your cart.`;
 }
 
 function viewCart() {
-  // write your code here
-}
+  if (cart.length === 0){ 
+    return 'Your shopping cart is empty.'}
+    else {
+ var cartWording = 'In your cart, you have';
+  for (var i=0; i < cart.length   ; i++) {
+    
+    if (cart.length === 1) { 
+        cartWording += ` ${cart[i].itemName} at $${cart[i].itemPrice}.`}
+    else{ 
+      if (i < cart.length - 1) {
+       cartWording += ` ${cart[i].itemName} at $${cart[i].itemPrice},`
+      } 
+      else if (i === cart.length - 1) { 
+       cartWording += ` and ${cart[i].itemName} at $${cart[i].itemPrice}.`    } }}
+return cartWording
+}}
 
 function total() {
-  // write your code here
+  var priceTotal = 0
+  for (var i = 0, i < cart.length, i++) {
+    priceTotal += `${cart[i].itemPrice}`
+  }
 }
 
 function removeFromCart(item) {
@@ -28,3 +49,12 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
+
+
+
+
+
+
+
+
+
