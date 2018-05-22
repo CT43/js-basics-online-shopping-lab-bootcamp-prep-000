@@ -44,7 +44,10 @@ function total() {
 }
   
 function removeFromCart(item) {
+  var
   if (cart.includes(`${item}`) === true) {
+    delete cart.
+  }
 }
 
 function placeOrder(cardNumber) {
