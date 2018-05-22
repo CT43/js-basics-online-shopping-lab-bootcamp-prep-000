@@ -45,12 +45,12 @@ function total() {
   
 function removeFromCart(item) {
  var itemGone = item;
- for (var i = 0; i < cart.length; i++){
-   if (cart[i].itemName === itemGone) { 
-     cart.splice(i, 1);
-}
- }
-}
+ for (var i = 0; i < cart.length; i++)
+   if cart[i].itemName === itemGone ?  
+     cart.splice(i, 1): 
+
+ 
+
 
 function placeOrder(cardNumber) {
   // write your code here
