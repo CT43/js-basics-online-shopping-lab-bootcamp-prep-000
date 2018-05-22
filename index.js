@@ -46,7 +46,7 @@ function total() {
 function removeFromCart(item) {
   var removeItem = `${item}`
   if (cart.includes(`${item}`) === true) {
-    delete cart.itemName.removeItem;
+    delete cart.removeItem;
     return cart;
   } else { 
     return 'That item is not in your cart.'
