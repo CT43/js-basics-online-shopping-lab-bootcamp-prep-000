@@ -36,6 +36,7 @@ return cartWording
 }}
 
 function total() {
+  
 }
   
 
