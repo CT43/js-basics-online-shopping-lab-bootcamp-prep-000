@@ -33,7 +33,7 @@ function viewCart() {
       else if (i === cart.length - 1) { 
        cartWording += ` and ${cart[i].itemName} at $${cart[i].itemPrice}.`    } }}
 return cartWording
-}}}
+}}
 
 function total() {
   var priceTotal = 0;
